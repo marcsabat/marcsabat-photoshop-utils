@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Marc Sàbat Photoshop Utils Documentation</title>
+  </head>
+
+  <body>
+    <h1>Marc Sàbat Photoshop Utils</h1>
+    
+    <h2>Luminosity Masks</h2>
+    
+    <ul>
+      <li>
+        <strong>What are luminosity masks?</strong>
+        <p>
+          Luminosity masks are a way to control images based on its tones. Confused? 
+          See this <a target="_blank" href="http://goodlight.us/writing/luminositymasks/luminositymasks-1.html">excellent article by Tony Kuyper</a>.      
+          This script is based on his great work.          
+        </p>
+      </li>
+      
+      <li>
+        <strong>How to install this script?</strong>
+        <p>
+          <ul>
+            <li>If you want to try this script just once open Photoshop and go to <i>File->Scripts->Browse...</i><br/>
+              Choose the file <i>Marc Sàbat Luminosity Masks.jsx</i>.
+              <p>(Restart Photoshop if needed)</p>
+            </li>
+            <li>
+              If you want to install it permanently and be easy accessible just copy the file <i>Marc Sàbat Luminosity Masks.jsx</i> to the scripts folder.<br/>
+              Usually: <i>c:\Program Files\Adobe\Adobe Photoshop CC (64 Bit)\Presets\Scripts\</i>
+            </li>
+          </ul>
+        </p>
+      </li>
+  
+      <li>
+        <strong>How does it work?</strong>
+        <p>
+          Upon firing the script a dialog will be presented:          
+        </p>
+        <center>
+          <img src="img/LuminosityMasks-Dialog.png" alt="Luminosity masks dialog"></img>
+        </center>
+
+        <p>Here you can choose how many depth levels of luminosity masks will be created and wheter or not curves adjustment layers will be created based on luminosity masks channels.</p>
+        
+        <p>Once the script has finished you will find the new luminosity channels:</p>
+        <center>
+          <img src="img/LuminosityMasks-Channels.png" alt="Luminosity masks channels"></img>
+        </center>
+
+        <p>You can load any channel as a selection (using the corresponding button at the bottom of channels tab) and, then, create any adjustment layer. The new adjustment layer will have attached the selected luminosity mask.</p>
+        <p>If you decided to create curves adjustment layers you will find three different sets (Darks, Lights and Midtones). Each set will contain as many adjustment layers as the depth specified.</p>
+
+        <center>
+          <img src="img/LuminosityMasks-CurvesLayers.png" alt="Luminosity masks curves adjustment layers"></img>
+        </center>
+      </li>
+      
+      <li>
+        <strong>Why did you create this script?</strong>
+        <p>
+          Multiple reasons: 
+            <ul>
+              <li>I did not find a free script or action <i>easily</i> downloadable (by that I mean no registration or giving away eMail address).</li>
+              <li>Some actions I found had issues with different UI languages (i.e. did not work for Photoshop installations different than the language they were created in).</li>
+              <li>I wanted some control like how many luminosity masks are going to be created and be able to create curves adjustment layers automatically.</li>
+            </ul>
+        </p>
+      </li>
+      
+    </ul>
+    
+  
+  </body>
+
+</html>
